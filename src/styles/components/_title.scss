@@ -1,0 +1,83 @@
+.titulo {
+    h1 {
+        position: absolute;
+        top: 6%;
+        left: 0;
+        right: 0;
+        margin-left: 4vh;
+        letter-spacing: 1vh;
+        font-size: 10vh;
+        color: white;
+        text-shadow: 5px 5px rgb(59, 0, 71);
+        animation: entrada 1s linear 10ms 1 normal;
+    }
+    .info { 
+        animation: aparicion 1.5s linear 10ms 1 normal;
+        i {
+            position: absolute;
+            top: 1%;
+            left: 1%;
+        }
+        i:hover {
+            cursor: pointer;
+        }
+        .oculta {
+            display: none;
+            font-size: 2vh;
+            text-align: start;
+            position: absolute;
+            top: 7%;
+            left: 1%;
+            background-color: white;
+            opacity: 0.5;
+            padding: 1vh;
+            border-radius: 5%;
+        }
+
+    }
+    .info:hover .oculta {
+        display: block;
+    }
+}
+
+@keyframes entrada {
+    0%   {font-size: 0;}
+    25%  {font-size: 4vh;}
+    50%  {font-size: 8vh;}
+    75%  {font-size: 12vh;}
+    100% {font-size: 10vh;}
+}
+
+@keyframes aparicion {
+    0%   {opacity: 0;}
+    25%  {opacity: 0.25;}
+    50%  {opacity: 0.50;}
+    75%  {opacity: 0.75;}
+    100% {opacity: 1;}
+}
+
+@media only screen and (max-width: 1890px) {
+    .titulo {
+        h1 {
+            font-size: 10vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    .titulo {
+        h1 {
+            font-size: 8vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .titulo {
+        h1 {
+            font-size: 5vh;
+        }
+    }
+}
+
+

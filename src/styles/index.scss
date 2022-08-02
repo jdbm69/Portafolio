@@ -1,0 +1,14 @@
+/* abstracts*/
+@use './abstracts/mixins';
+@use './abstracts/variables';
+
+/* base */
+@use './base/base';
+@use './base/reset';
+
+/* components */
+@use './components/bot';
+@use './components/game';
+@use './components/user';
+@use './components/winner';
+@use './components/title'
