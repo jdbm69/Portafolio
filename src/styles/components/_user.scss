@@ -10,7 +10,7 @@
         transition: color 1ms linear 1ms;
         position: relative;
         box-shadow: 5px 5px 10px 2px rgb(59, 0, 71);
-        margin-bottom: 5vh;
+        margin-bottom: 2vh;
     }
     button:hover {
         cursor: pointer;
@@ -52,6 +52,16 @@
         font-size: 3vh;
         button {
             font-size: 4vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .user_box {
+        font-size: 2.5vh;
+        button {
+            font-size: 4vh;
+            padding: 2vh;
         }
     }
 }
