@@ -1,12 +1,12 @@
 import React from "react";
-import Game from '../components/Game';
-import Title from '../components/Title';
+import BodyHome from "../components/home/BodyHome";
+import Footer from "../components/Footer";
+
 
 const Home = () => {
     return (
-        <div className="box_app">
-            <Title />
-            <Game />
+        <div>
+            <BodyHome/>
         </div>
     )
 };

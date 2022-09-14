@@ -3,8 +3,16 @@
 @use './base/reset';
 
 /* components */
-@use './components/bot';
-@use './components/game';
-@use './components/user';
-@use './components/winner';
-@use './components/title'
+@use "./components/footer";
+@use "./components/navBar";
+
+/* components home*/
+@use "./components/home/content";
+@use "./components/home/content2";
+@use "./components/home/title";
+
+/* components tienda */
+@use "./components/tienda/tienda";
+
+/* components contacto*/
+@use "./components/contacto/contacto";
