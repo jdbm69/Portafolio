@@ -96,8 +96,8 @@ const BodyTienda = () => {
             <div class="bg"></div>
                 <div class="bg bg2"></div>
                 <div class="bg bg3"></div>
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="500" class="accordion-item">
+                <div class="accordion accordion-flush" id="accordionFlushExample" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                    <div  class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                 Joggers
@@ -454,7 +454,7 @@ const BodyTienda = () => {
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-left" data-aos-delay="800" data-aos-duration="500" class="accordion-item">
+                    <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                 Crop-Tops
@@ -778,7 +778,7 @@ const BodyTienda = () => {
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-left" data-aos-delay="1100" data-aos-duration="500" class="accordion-item">
+                    <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                 T-Shirts
@@ -1302,7 +1302,7 @@ const BodyTienda = () => {
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-left" data-aos-delay="1400" data-aos-duration="500" class="accordion-item">
+                    <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                                 Vestidos
@@ -1476,7 +1476,7 @@ const BodyTienda = () => {
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-left" data-aos-delay="1700" data-aos-duration="500" class="accordion-item">
+                    <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingFive">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                                 Trajes de Baño
@@ -1554,7 +1554,7 @@ const BodyTienda = () => {
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-left" data-aos-delay="2000" data-aos-duration="500" class="accordion-item">
+                    <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingSix">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
                                 Accesorios
