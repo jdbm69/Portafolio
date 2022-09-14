@@ -64,8 +64,8 @@ const Content = () => {
                     </button>
                 </div> 
                 <div className="texto">
-                    <img src={cicis_content} alt="imagen" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800"/>
-                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100" >Cicis es un emprendimiento que comenzo en el año 2019, una idea que se logro materializar
+                    <img src={cicis_content} alt="imagen" data-aos="fade-down" data-aos-duration="500" data-aos-delay="800"/>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" >Cicis es un emprendimiento que comenzo en el año 2019, una idea que se logro materializar
                     con mucha pasion y dedicacion. Se realizan ventas al mayor y al detal, envios a nivel nacional,
                     delivery en caracas y pick up en la zona de La Candelaria.<br/><br/><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1400">Sientete hermosa y luce hermosa <i class="bi bi-bag-heart"></i></span></p>
                 </div> 
