@@ -33,7 +33,7 @@ import { Link } from 'react-router-dom';
 const Content2 = () => {
     return (
         <div className="content2_box">
-            <div class="card" data-aos="flip-right" data-aos-duration="1000">
+            <div class="card" data-aos="fade-right" data-aos-duration="1000">
                 <div id="carousel_joggers" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carousel_joggers" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -74,7 +74,7 @@ const Content2 = () => {
                 </div>
             </div>
 
-            <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
+            <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
             <div id="carousel_crop" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carousel_crop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -115,7 +115,7 @@ const Content2 = () => {
                 </div>
             </div>
 
-            <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="700">
+            <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
             <div id="carousel_t" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carousel_t" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -156,7 +156,7 @@ const Content2 = () => {
                 </div>
             </div>
 
-            <div class="card" data-aos="flip-left" data-aos-duration="1000">
+            <div class="card" data-aos="fade-left" data-aos-duration="1000">
             <div id="carousel_vestidos" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carousel_vestidos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -197,7 +197,7 @@ const Content2 = () => {
                 </div>
             </div>
 
-            <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+            <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
             <div id="carousel_tjd" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carousel_tjd" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -234,7 +234,7 @@ const Content2 = () => {
                 </div>
             </div>
 
-            <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="700">
+            <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
             <div id="carousel_acc" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carousel_acc" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
