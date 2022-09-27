@@ -1,0 +1,32 @@
+.container_footer {
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    border-top: 5px solid rgb(50, 38, 163);
+    p {
+        font-size: 2vh;
+        text-align: center;
+        padding-top: 8vh;
+        letter-spacing: 0.5vh;
+        color: white;
+        span {
+            color: rgb(50, 38, 163);
+        }
+    }
+    #button {
+        font-size: 4vh;
+        background-color: rgb(50, 38, 163);
+        color: white;
+        padding: 2vh;
+        position: absolute;
+        bottom: 1.5%;
+        left: 48%;
+        transition: all 500ms ease-in 10ms;
+        border: 3px solid rgb(50, 38, 163);
+    }
+    #button:hover {
+        background-color: black;
+        color: rgb(50, 38, 163);
+        cursor: pointer;
+    }
+}

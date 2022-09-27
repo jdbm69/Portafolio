@@ -1,0 +1,48 @@
+.container_contact {
+    width: 100%;
+    height: auto;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(255,255,255,0) 100%);
+    padding-top: 10vh;
+    padding-bottom: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+        font-size: 7vh;
+        animation: nombreSeccionWhite 2s infinite linear;
+    }
+    .linea {
+        height: 0.75vh;
+        width: 15vh;
+        background-color: rgb(50, 38, 163);
+        margin-top: 2vh;
+    }
+    p {
+        padding-top: 20vh;
+        font-size: 4vh;
+        color: white;
+    }
+    .contacts {
+        padding-top: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6vh;
+        a {
+            color: white;
+            font-size: 5vh;
+            background-color: rgb(50, 38, 163);
+            padding: 3vh;
+            transition: all 500ms ease-in 10ms;
+            border: 5px solid rgb(50, 38, 163);
+        }
+        a:hover {
+            cursor: pointer;
+            background-color: transparent;
+            color: rgb(50, 38, 163);
+            animation: shadowButton 1s infinite linear;
+        }
+    }
+}

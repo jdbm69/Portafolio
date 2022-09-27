@@ -1,0 +1,61 @@
+.container_aboutme {
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+        font-size: 7vh;
+        animation: nombreSeccion 2s infinite linear;
+    }
+    .linea {
+        height: 0.75vh;
+        width: 15vh;
+        background-color: rgb(50, 38, 163);
+        margin-top: 2vh;
+    }
+    .skills_about {
+        margin-top: 30vh;
+        display: flex;
+        align-items: center;
+        gap: 20vh;
+        .about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img {
+                width: 30vh;
+                height: 35vh;
+                border-radius: 50%;
+                animation: shadowSkills 2s infinite linear;
+            }
+            p {
+                width: 60vh;
+                margin-top: 5vh;
+                text-align: center;
+                font-size: 3vh;
+                color: black;
+                span {
+                    color: rgb(50, 38, 163);
+                }
+            }
+        }
+    }
+}
+
+@keyframes nombreSeccion {
+    0% {color: rgb(0, 0, 0);}
+    50% {color: rgb(50, 38, 163);}
+    100% {color: rgb(0, 0, 0);}
+}
+
+@keyframes shadowSkills {
+    0% {box-shadow: 0 0 20px 5px rgb(255, 255, 255);}
+    50% {box-shadow: 0 0 20px 5px rgb(50, 38, 163);}
+    100% {box-shadow: 0 0 20px 5px rgb(255, 255, 255);}
+}

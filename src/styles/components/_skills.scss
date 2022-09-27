@@ -1,0 +1,88 @@
+.container_skills {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    .skill {
+        display: flex;
+        gap: 3vh;
+        .barras {
+            width: 75vh;
+            height: 4vh;
+            background-color: rgba(50, 38, 163, 0.356);
+            margin-top: 1vh;
+            transition: all 500ms ease-in 10ms;
+            .barra {
+                height: 100%;
+                background-color: rgb(50, 38, 163);
+                
+            }
+            #noventa {
+                width: 85%;
+            }
+            #ochenta {
+                width: 75%;
+            }
+            #setenta {
+                width: 65%;
+            }
+            #sesenta {
+                width: 55%;
+            }
+            #cincuenta {
+                width: 45%;
+            }
+        }
+        .barras:hover {
+            animation: shadowSkills 1s infinite linear;
+        }
+        .icono {
+            display: flex;
+            img {
+                width: 6vh;
+                height: 6vh;
+                animation-delay: 5s;
+                position: relative;
+            }
+            h2 {
+                display: none;
+                color: white;
+                position: absolute;
+                right: 102%;
+                font-size: 2vh;
+                background-color: rgb(50, 38, 163);
+                padding: 2vh 3vh;
+            }
+        }
+        .icono:hover {
+            img {
+                animation: rebote 0.75s linear 10ms infinite normal;
+            }
+            h2 {
+                display: flex;
+                animation: shadowSkills 1s infinite linear;
+            }
+        }
+        p {
+            color: rgb(50, 38, 163);
+            font-size: 2.5vh;
+            padding-top: 1vh;
+            position: absolute;
+            left: 92%;
+        }
+    }
+}
+
+@keyframes rebote {
+    0%   {top:0px;}
+    25%  {top:-6px;}
+    50%  {top:-12px;}
+    75%  {top:-6px;}
+    100% {top:0px;}
+}
+
+@keyframes shadowSkills {
+    0% {box-shadow: 0 0 20px 5px rgb(255, 255, 255);}
+    50% {box-shadow: 0 0 20px 5px rgb(50, 38, 163);}
+    100% {box-shadow: 0 0 20px 5px rgb(255, 255, 255);}
+}

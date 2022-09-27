@@ -1,0 +1,63 @@
+.container_title {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+    h1 {
+        color: #ffffff;
+        z-index: 10;
+        font-size: 7vh;
+        background-color: transparent;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        span {
+            background-color: transparent;
+            color: rgb(50, 38, 163);
+            animation: nombre 2s infinite linear;
+            animation-delay: 4s;
+            transition: all 0.5s ease-in 10ms;
+        }
+    }
+    .boton {
+        #button {
+            padding: 2vh 7vh;
+            background-color: rgb(50, 38, 163);
+            z-index: 10;
+            font-size: 3.5vh;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            border: 6px solid rgb(50, 38, 163);
+            transition: all 500ms ease-in 10ms;
+            i {
+                margin-left: 3vh;
+            }
+        }
+        #button:hover {
+            cursor: pointer;
+            background-color: transparent;
+            color: white;
+            border: 6px solid rgb(50, 38, 163);
+            animation: shadowButton 1s infinite linear;
+            i {
+                color: rgb(50, 38, 163);
+            }
+        }
+    }
+}
+
+@keyframes nombre {
+    0% {color: rgb(50, 38, 163);}
+    50% {color: white;}
+    100% {color: rgb(50, 38, 163);}
+}
+
+@keyframes shadowButton {
+    0% {box-shadow: 0 0 20px 1px rgb(50, 38, 163);}
+    50% {box-shadow: 0 0 20px 1px rgb(255, 255, 255);}
+    100% {box-shadow: 0 0 20px 1px rgb(50, 38, 163);}
+}
+

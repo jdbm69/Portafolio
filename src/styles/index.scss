@@ -2,4 +2,11 @@
 @use './base/reset';
 
 /* components */
-@use "./components/container";
+@use "./components/title";
+@use "./components/aboutme";
+@use "./components/skills";
+@use "./components/navBar";
+@use "./components/navBarDos";
+@use "./components/projects";
+@use "./components/contact";
+@use "./components/footer";

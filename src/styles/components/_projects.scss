@@ -1,0 +1,125 @@
+.container_projects {
+    width: 100%;
+    height: auto;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 20%, rgba(50,38,163,1) 50%, rgba(255,255,255,1) 100%);
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+    h2 {
+        font-size: 7vh;
+        animation: nombreSeccionWhite 2s infinite linear;
+    }
+    .linea {
+        height: 0.75vh;
+        width: 15vh;
+        background-color: rgb(50, 38, 163);
+        margin-top: 2vh;
+    }
+    .projects {
+        margin-top: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10vh;
+        .project {
+            transition: all 500ms ease-in 10ms;
+            img {
+                width: 90vh;
+                height: 50vh;
+            }
+            .info {
+                display: none;
+                position: absolute;
+                h3 {
+                    font-size: 5vh;
+                    text-align: center;
+                    background-color: rgb(50, 38, 163);
+                    padding: 2vh 8vh;
+                    color: white;
+                    animation: shadowProject 2s infinite linear;
+                }
+                .icons {
+                    a {
+                        font-size: 5vh;
+                        transition: all 0.3s ease-in 10ms;
+                        color: white;
+                        z-index: 20;
+                    }
+                    p {
+                        display: none;
+                    }
+                    a:hover {
+                        cursor: pointer;
+                        color: rgb(50, 38, 163);
+                        p {
+                            display: block;
+                            position: absolute;
+                            font-size: 2vh;
+                            background-color: rgb(50, 38, 163);
+                            padding: 1vh 3vh;
+                            color: white;
+                            animation: shadowProject 2s infinite linear;
+                        }
+                    }
+                }
+            }
+            #ppt {
+                top: 25%;
+                left: 13%;
+            }
+            #cc {
+                top: 25%;
+                right: 28%;
+            }
+            #cal {
+                top: 25%;
+                right: 25%;
+            }
+        }
+        .project:hover {
+            img {
+                opacity: 0.2;
+                border: 5px solid white;
+            }
+            .info {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 10vh;
+                .icons {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8vh
+                }
+            }
+        }
+    }
+    .blanco {
+        height: 40vh;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        bottom: 20.5%;
+        z-index: -5;
+    }
+}
+
+@keyframes shadowProject {
+    0% {box-shadow: 0 0 20px 1px rgb(50, 38, 163);}
+    50% {box-shadow: 0 0 20px 1px rgb(255, 255, 255);}
+    100% {box-shadow: 0 0 20px 1px rgb(50, 38, 163);}
+}
+
+@keyframes nombreSeccionWhite {
+    0% {color: white;}
+    50% {color: rgb(50, 38, 163);}
+    100% {color: white;}
+}
