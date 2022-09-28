@@ -1,29 +1,29 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-const NavBar = () => {
+const NavBar = ({ingles}) => {
     return (
             <div className="navBarDos" data-aos="fade-down" data-aos-duration="1000">
                 <nav>
                     <ul>
                         <li>
                             <Link activeClass="active" smooth spy to="inicio">
-                                INICIO
+                                {ingles ? 'HOME' : 'INICIO'}
                             </Link>
                         </li>
                         <li>
                             <Link activeClass="active" smooth spy to="sobreMi">
-                                SOBRE MI
+                                {ingles ? 'ABOUT ME' : 'SOBRE MI'}
                             </Link>
                         </li>
                         <li>
                             <Link activeClass="active" smooth spy to="proyectos">
-                                PROYECTOS
+                                {ingles ? 'PROJECTS' : 'PROYECTOS'}
                             </Link>
                         </li>
                         <li>
                             <Link activeClass="active" smooth spy to="contacto">
-                                CONTACTO
+                                {ingles ? 'CONTACT' : 'CONTACTO'}
                             </Link>
                         </li>
                     </ul>

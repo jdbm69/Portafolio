@@ -3,13 +3,14 @@
     height: auto;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 20%, rgba(50,38,163,1) 50%, rgba(255,255,255,1) 100%);
-    padding-top: 30vh;
-    padding-bottom: 30vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0);
+    flex-wrap: wrap;
     h2 {
         font-size: 7vh;
         animation: nombreSeccionWhite 2s infinite linear;
@@ -21,7 +22,7 @@
         margin-top: 2vh;
     }
     .projects {
-        margin-top: 30vh;
+        margin-top: 20vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -107,7 +108,7 @@
         width: 100%;
         background-color: white;
         position: absolute;
-        bottom: 20.5%;
+        bottom: 21.5%;
         z-index: -5;
     }
 }
@@ -122,4 +123,67 @@
     0% {color: white;}
     50% {color: rgb(50, 38, 163);}
     100% {color: white;}
+}
+
+@media only screen and (max-width: 600px) {
+    .container_projects {
+        h2 {
+            font-size: 4vh;
+        }
+        .linea {
+            height: 0.4vh;
+            width: 10vh;
+            margin-top: 1vh;
+        }
+        .projects {
+            margin-top: 10vh;
+            .project {
+                img {
+                    width: 40vh;
+                    height: 25vh;
+                }
+                .info {
+                    h3 {
+                        font-size: 2vh;
+                        padding: 2vh 5vh;
+                    }
+                    .icons {
+                        a {
+                            font-size: 3vh;
+                        }
+                        p {
+                            display: none;
+                        }
+                        a:hover {
+                            p {
+                                font-size: 1vh;
+                                padding: 1vh;
+                            }
+                        }
+                    }
+                }
+                #ppt {
+                    top: 15%;
+                    left: 13%;
+                }
+                #cc {
+                    top: 15%;
+                    right: 28%;
+                }
+                #cal {
+                    top: 15%;
+                    right: 23%;
+                }
+            }
+            .project:hover {
+                .info {
+                    gap: 5vh;
+                }
+            }
+        }
+        .blanco {
+            height: 30vh;
+            bottom: 17%;
+        }
+    }
 }

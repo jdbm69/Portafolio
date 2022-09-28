@@ -2,7 +2,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 1vh;
     .skill {
         display: flex;
         gap: 3vh;
@@ -15,22 +15,46 @@
             .barra {
                 height: 100%;
                 background-color: rgb(50, 38, 163);
-                
             }
             #noventa {
+                width: 0;
+                transition: all 800ms ease-in 1s;
+            }
+            #noventa-active {
                 width: 85%;
+                transition: all 800ms ease-in 1s;
             }
             #ochenta {
+                width: 0;
+                transition: all 800ms ease-in 1s;
+            }
+            #ochenta-active {
                 width: 75%;
+                transition: all 800ms ease-in 1s;
             }
             #setenta {
+                width: 0;
+                transition: all 800ms ease-in 1s;
+            }
+            #setenta-active {
                 width: 65%;
+                transition: all 800ms ease-in 1s;
             }
             #sesenta {
+                width: 0;
+                transition: all 800ms ease-in 1s;
+            }
+            #sesenta-active {
                 width: 55%;
+                transition: all 800ms ease-in 1s;
             }
             #cincuenta {
+                width: 0;
+                transition: all 800ms ease-in 1s;
+            }
+            #cincuenta-active {
                 width: 45%;
+                transition: all 800ms ease-in 1s;
             }
         }
         .barras:hover {
@@ -41,22 +65,27 @@
             img {
                 width: 6vh;
                 height: 6vh;
-                animation-delay: 5s;
                 position: relative;
             }
             h2 {
                 display: none;
                 color: white;
                 position: absolute;
-                right: 102%;
+                right: 52%;
                 font-size: 2vh;
                 background-color: rgb(50, 38, 163);
                 padding: 2vh 3vh;
             }
+            .imagen-active-uno {
+                animation: rotacionUno 3s linear 10ms 1 normal;
+            }
+            .imagen-active-dos {
+                animation: rotacionDos 3s linear 10ms 1 normal;
+            }
         }
         .icono:hover {
             img {
-                animation: rebote 0.75s linear 10ms infinite normal;
+                animation: rotacionUno 0.75s linear 10ms infinite normal;
             }
             h2 {
                 display: flex;
@@ -68,21 +97,52 @@
             font-size: 2.5vh;
             padding-top: 1vh;
             position: absolute;
-            left: 92%;
+            left: 87.5%;
         }
     }
 }
 
-@keyframes rebote {
-    0%   {top:0px;}
-    25%  {top:-6px;}
-    50%  {top:-12px;}
-    75%  {top:-6px;}
-    100% {top:0px;}
+@keyframes rotacionUno {
+    0%   {transform: rotate(0);}
+    100% {transform: rotate(359deg);}
+}
+
+@keyframes rotacionDos {
+    0%   {transform: rotate(0);}
+    100% {transform: rotate(-359deg);}
 }
 
 @keyframes shadowSkills {
     0% {box-shadow: 0 0 20px 5px rgb(255, 255, 255);}
     50% {box-shadow: 0 0 20px 5px rgb(50, 38, 163);}
     100% {box-shadow: 0 0 20px 5px rgb(255, 255, 255);}
+}
+
+@media only screen and (max-width: 600px) {
+    .container_skills {
+        .skill {
+            gap: 2vh;
+            .barras {
+                width: 30vh;
+                height: 3vh;
+            }
+            .icono {
+                img {
+                    width: 4vh;
+                    height: 4vh;
+                    position: relative;
+                }
+                h2 {
+                    left: 30%;
+                    font-size: 1vh;
+                    padding: 1vh;
+                }
+            }
+            p {
+                font-size: 1vh;
+                padding-top: 1.5vh;
+                left: 82%;
+            }
+        }
+    }
 }

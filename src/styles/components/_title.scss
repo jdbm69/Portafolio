@@ -13,12 +13,17 @@
         background-color: transparent;
         text-align: center;
         font-family: 'Quicksand', sans-serif;
-        span {
+        .title {
             background-color: transparent;
             color: rgb(50, 38, 163);
             animation: nombre 2s infinite linear;
             animation-delay: 4s;
             transition: all 0.5s ease-in 10ms;
+        }
+        .title.active {
+            letter-spacing: 2vh;
+            font-family: 'Orbitron', sans-serif;
+            animation: none;
         }
     }
     .boton {
@@ -61,3 +66,16 @@
     100% {box-shadow: 0 0 20px 1px rgb(50, 38, 163);}
 }
 
+@media only screen and (max-width: 600px) {
+    .container_title {
+        gap: 10vh;
+        h1 {
+            font-size: 3vh;
+        }
+        .boton {
+            #button {
+                font-size: 1.5vh;
+            }
+        }
+    }
+}

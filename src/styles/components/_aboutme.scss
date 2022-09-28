@@ -1,5 +1,5 @@
 .container_aboutme {
-    padding-top: 30vh;
+    padding-top: 20vh;
     padding-bottom: 30vh;
     width: 100%;
     height: auto;
@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     h2 {
         font-size: 7vh;
         animation: nombreSeccion 2s infinite linear;
@@ -19,9 +20,11 @@
         margin-top: 2vh;
     }
     .skills_about {
-        margin-top: 30vh;
+        margin-top: 20vh;
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 20vh;
         .about {
             display: flex;
@@ -58,4 +61,31 @@
     0% {box-shadow: 0 0 20px 5px rgb(255, 255, 255);}
     50% {box-shadow: 0 0 20px 5px rgb(50, 38, 163);}
     100% {box-shadow: 0 0 20px 5px rgb(255, 255, 255);}
+}
+
+@media only screen and (max-width: 600px) {
+    .container_aboutme {
+        padding-bottom: 20vh;
+        h2 {
+            font-size: 4vh;
+        }
+        .linea {
+            height: 0.4vh;
+            width: 10vh;
+            margin-top: 1vh;
+        }
+        .skills_about {
+            margin-top: 10vh;
+            .about {
+                img {
+                    width: 20vh;
+                    height: 25vh;
+                }
+                p {
+                    width: 35vh;
+                    font-size: 2vh;
+                }
+            }
+        }
+    }
 }

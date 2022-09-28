@@ -30,3 +30,20 @@
         cursor: pointer;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .container_footer {
+        height: 10vh;
+        p {
+            font-size: 1.5vh;
+            padding-top: 5vh;
+        }
+        #button {
+            font-size: 2vh;
+            padding: 1.5vh;
+            position: absolute;
+            bottom: 1.2%;
+            left: 45%;
+        }
+    }
+}

@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     h2 {
         font-size: 7vh;
         animation: nombreSeccionWhite 2s infinite linear;
@@ -30,6 +31,7 @@
         justify-content: center;
         align-items: center;
         gap: 6vh;
+        flex-wrap: wrap;
         a {
             color: white;
             font-size: 5vh;
@@ -43,6 +45,32 @@
             background-color: transparent;
             color: rgb(50, 38, 163);
             animation: shadowButton 1s infinite linear;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container_contact {
+        padding-bottom: 20vh;
+        h2 {
+            font-size: 4vh;
+        }
+        .linea {
+            height: 0.4vh;
+            width: 10vh;
+            margin-top: 1vh;
+        }
+        p {
+            padding-top: 10vh;
+            font-size: 2vh;
+            text-align: center;
+        }
+        .contacts {
+            gap: 3vh;
+            a {
+                font-size: 3vh;
+                padding: 2vh;
+            }
         }
     }
 }

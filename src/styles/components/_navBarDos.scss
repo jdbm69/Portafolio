@@ -26,3 +26,18 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .navBarDos {
+        height: 8vh;
+        border-top: 5px solid rgb(50, 38, 163);
+        nav {
+            font-size: 1vh;
+            padding-left: 0;
+            padding-top: 3vh;
+            ul {
+                gap: 2vh;
+            }
+        }
+    }
+}

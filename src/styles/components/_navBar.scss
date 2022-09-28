@@ -39,3 +39,17 @@
     50% {opacity: 0.5;}
     100% {opacity: 1;}
 }
+
+@media only screen and (max-width: 600px) {
+    .navBar {
+        height: 8vh;
+        nav {
+            font-size: 1vh;
+            padding-left: 0;
+            padding-top: 3vh;
+            ul {
+                gap: 2vh;
+            }
+        }
+    }
+}
