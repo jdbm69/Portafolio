@@ -1,6 +1,6 @@
 import React from "react"; 
 import Skills from "./Skills";
-import yo from "../resources/yo.jpg";
+import yo from "../resources/yo.jpg"
 
 const AboutMe = ({ingles}) => {
     return (
