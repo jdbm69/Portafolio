@@ -32,8 +32,9 @@
             align-items: center;
             flex-direction: column;
             img {
-                width: 30vh;
+                width: 40vh;
                 height: 35vh;
+                border-radius: 20%;
                 animation: shadowSkills 2s infinite linear;
             }
             p {
