@@ -95,16 +95,27 @@
 
 @media only screen and (max-width: 600px) {
     .container_skills {
+        gap: 1vh;
         .skill {
-            gap: 2vh;
+            gap: 1vh;
+            height: 2vh;
+            padding-left: 1vh;
+            padding-right: 1vh;
+            .nombre {
+                width: 7vh;
+                h4 {
+                    font-size: 1vh;
+                    padding-top: 0.4vh;
+                }
+            }
             .barras {
                 width: 30vh;
-                height: 3vh;
+                height: 2vh;
+                
             }
             p {
                 font-size: 1vh;
-                padding-top: 1.5vh;
-                left: 80%;
+                padding-top: 0.3vh;
             }
         }
     }
