@@ -16,6 +16,7 @@
             h4 {
                 font-size: 3vh;
                 color: black;
+                animation: shadowName 2s infinite linear;
             }
         }
         .barras {
@@ -87,6 +88,12 @@
     100% {transform: rotate(-359deg);}
 }
 
+@keyframes shadowName {
+    0% {color: rgb(0, 0, 0);}
+    50% {color: rgb(88, 81, 150);}
+    100% {color: rgb(0, 0, 0);}
+}
+
 @keyframes shadowSkills {
     0% {box-shadow: 0 0 20px 5px rgb(255, 255, 255);}
     50% {box-shadow: 0 0 20px 5px rgb(50, 38, 163);}
@@ -95,26 +102,26 @@
 
 @media only screen and (max-width: 600px) {
     .container_skills {
-        gap: 1vh;
+        gap: 2vh;
         .skill {
             gap: 1vh;
-            height: 2vh;
+            height: 3vh;
             padding-left: 1vh;
             padding-right: 1vh;
             .nombre {
-                width: 7vh;
+                width: 13vh;
                 h4 {
-                    font-size: 1vh;
-                    padding-top: 0.4vh;
+                    font-size: 2vh;
+                    padding-top: 0.3vh;
                 }
             }
             .barras {
-                width: 30vh;
-                height: 2vh;
+                width: 35vh;
+                height: 3vh;
                 
             }
             p {
-                font-size: 1vh;
+                font-size: 1.5vh;
                 padding-top: 0.3vh;
             }
         }
