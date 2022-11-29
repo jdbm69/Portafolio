@@ -2,15 +2,26 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 1vh;
+    gap: 3vh;
     .skill {
         display: flex;
-        gap: 3vh;
+        gap: 2vh;
+        background-color: rgba(106, 89, 255, 0.534);
+        height: 4vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+        .nombre {
+            width: 20vh;
+            text-align: center;
+            h4 {
+                font-size: 3vh;
+                color: black;
+            }
+        }
         .barras {
             width: 75vh;
             height: 4vh;
             background-color: rgba(50, 38, 163, 0.356);
-            margin-top: 1vh;
             transition: all 500ms ease-in 10ms;
             .barra {
                 height: 100%;
@@ -60,44 +71,8 @@
         .barras:hover {
             animation: shadowSkills 1s infinite linear;
         }
-        .icono {
-            display: flex;
-            img {
-                width: 6vh;
-                height: 6vh;
-                position: relative;
-            }
-            h2 {
-                display: none;
-                color: white;
-                position: absolute;
-                right: 52%;
-                font-size: 2vh;
-                background-color: rgb(50, 38, 163);
-                padding: 2vh 3vh;
-            }
-            .imagen-active-uno {
-                animation: rotacionUno 3s linear 10ms 1 normal;
-            }
-            .imagen-active-dos {
-                animation: rotacionDos 3s linear 10ms 1 normal;
-            }
-        }
-        .icono:hover {
-            img {
-                animation: rotacionUno 0.75s linear 10ms infinite normal;
-            }
-            h2 {
-                display: flex;
-                animation: shadowSkills 1s infinite linear;
-            }
-        }
         p {
             color: rgb(50, 38, 163);
-            font-size: 2.5vh;
-            padding-top: 1vh;
-            position: absolute;
-            left: 87.5%;
         }
     }
 }
@@ -125,18 +100,6 @@
             .barras {
                 width: 30vh;
                 height: 3vh;
-            }
-            .icono {
-                img {
-                    width: 4vh;
-                    height: 4vh;
-                    position: relative;
-                }
-                h2 {
-                    left: 30%;
-                    font-size: 1vh;
-                    padding: 1vh;
-                }
             }
             p {
                 font-size: 1vh;
